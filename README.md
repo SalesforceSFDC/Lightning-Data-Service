@@ -11,3 +11,4 @@
 * `fields` specifies which fields in the record to query. The `fields` or `layoutType` attribute (or both) must be provided.
 * `force:recordData` tag is just the logic used to communicate with the server and manage the local cache.
 * `force:recordData` tag uses the UI API to provide data to your UI components.
+* The first thing you do to make a record available for your UI components is to load it.
