@@ -1,5 +1,8 @@
 # Lightning-Data-Service
 
+## Considerations
+* [LDS Considerations](https://developer.salesforce.com/docs/atlas.en-us.210.0.lightning.meta/lightning/data_service_considerations.htm)
+
 `force:recordData`
 
 * `recordId` specifies the record to load. Records can’t be loaded without a `recordId`.
