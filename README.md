@@ -13,3 +13,4 @@
 * `force:recordData` tag uses the UI API to provide data to your UI components.
 ### 1. Loading Data
 * The first thing you do to make a record available for your UI components is to load it.
+* 
