@@ -1,0 +1,35 @@
+<aura:component implements="flexipage:availableForRecordHome, force:hasRecordId">
+
+<aura:attribute name="newContact" type="Object"/>
+<aura:attribute name="simpleNewContact" type="Object"/>
+<aura:attribute name="newContactError" type="String"/>
+
+<force:recordData aura:id="contactRecordCreator"
+    layoutType="FULL"
+    targetRecord="{!v.newContact}"
+    targetFields ="{!v.simpleNewContact}"
+    targetError="{!v.newContactError}"
+    />
+
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!-- Display the new contact form -->
+    <div class="Create Contact">
+        <lightning:card iconName="action:new_contact" title="Create Contact">
+            <div class="slds-p-horizontal--small">
+                <lightning:input aura:id="contactField" label="First Name" value="{!v.simpleNewContact.FirstName}"/>
+                <lightning:input aura:id="contactField" label="Last Name" value="{!v.simpleNewContact.LastName}"/>
+                <lightning:input aura:id="contactField" label="Title" value="{!v.simpleNewContact.Title}"/>
+                <br/>
+                <lightning:button label="Save Contact" variant="brand" onclick="{!c.handleSaveContact}"/>
+            </div>
+        </lightning:card>
+    </div>
+
+    <!-- Display Lightning Data Service errors -->
+    <aura:if isTrue="{!not(empty(v.newContactError))}">
+        <div class="recordError">
+            {!v.recordError}</div>
+    </aura:if>
+
+</aura:component>
