@@ -1,4 +1,5 @@
 # Lightning-Data-Service
+* All CRUD operations try to resolve immediately with an XMLHttpRequest to the server. 
 
 ## Considerations
 * [LDS Considerations](https://developer.salesforce.com/docs/atlas.en-us.210.0.lightning.meta/lightning/data_service_considerations.htm)
