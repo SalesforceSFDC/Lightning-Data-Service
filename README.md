@@ -14,3 +14,4 @@
 ### 1. Loading Data
 * The first thing you do to make a record available for your UI components is to load it.
 * Load the record by including `force:recordData` in your component while specifying the `recordId`, `mode`, and `layoutType` or `fields` attributes.
+### 2. Saving Records
