@@ -16,3 +16,4 @@
 * Load the record by including `force:recordData` in your component while specifying the `recordId`, `mode`, and `layoutType` or `fields` attributes.
 ### 2. Saving Records
 * Javascript controller calls the `saveRecord()` function.  The saveRecord() method takes a single callback function, SaveRecordResult, as its only parameter.
+* `SaveRecordResult` includes a state attribute that tells you whether the save was successful.
