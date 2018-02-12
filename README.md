@@ -17,3 +17,5 @@
 ### 2. Saving Records
 * Javascript controller calls the `saveRecord()` function.  The saveRecord() method takes a single callback function, SaveRecordResult, as its only parameter.
 * `SaveRecordResult` includes a state attribute that tells you whether the save was successful.
+### 3. Creating Data
+### 4. Deleting Data
